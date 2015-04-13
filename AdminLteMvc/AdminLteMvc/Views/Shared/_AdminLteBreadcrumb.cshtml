@@ -1,0 +1,30 @@
+﻿@if (ViewBag.Breadcrumb != null)
+{
+    <ol class="breadcrumb">
+        @foreach (Crumb crumb in ViewBag.Breadcrumb)
+        {
+            <li>
+                @if (crumb.HasLink)
+                {
+                    <a href="@crumb.Link">
+                        @if (crumb.HasIcon)
+                        {
+                            <i class="fa @crumb.Icon"></i>
+                        }
+
+                        <span>@crumb.Text</span>
+                    </a>
+                }
+                else
+                {
+                    if (crumb.HasIcon)
+                    {
+                        <i class="fa @crumb.Icon"></i>
+                    }
+
+                    <span>@crumb.Text</span>
+                }
+            </li>
+        }
+    </ol>
+}
