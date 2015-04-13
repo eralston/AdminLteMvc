@@ -13,5 +13,10 @@ namespace AdminLteMvc.Controllers
         {
             return View();
         }
+
+        public ActionResult Colors()
+        {
+            return View();
+        }
     }
 }
