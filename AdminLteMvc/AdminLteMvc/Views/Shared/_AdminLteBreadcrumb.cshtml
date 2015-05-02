@@ -1,4 +1,9 @@
-﻿@if (ViewBag.Breadcrumb != null)
+﻿@* 
+ This breadcrumb partial is meant to be dropped into the top of the main content page
+    and uses the AdminLte.Breadcrumb class to dynamically build the breadcrumb per page
+*@
+
+@if (ViewBag.Breadcrumb != null)
 {
     <ol class="breadcrumb">
         @foreach (Crumb crumb in ViewBag.Breadcrumb)

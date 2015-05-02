@@ -4,6 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/// <summary>
+/// This class represents an individual piece of the breadcrumb at the top of the main content area of the page
+/// Instances of this object must carry a text value and may optionally also carry a link and icon class
+/// If the text value or icon are null or empty, then they are ignored
+/// Instances of this class should be captured in the Breadcrumb collection class
+/// </summary>
 public class Crumb
 {
     public Crumb() { }
@@ -33,6 +39,9 @@ public class Crumb
     public bool HasIcon { get { return !string.IsNullOrEmpty(Icon); } }
 }
 
+/// <summary>
+/// A full breadcrumb is just a list of crumbs that can then be translated into an AdminLTE breadcrumb using cshtml
+/// </summary>
 public class Breadcrumb : List<Crumb>
 {
     public Breadcrumb(IEnumerable<Crumb> crumbs) : base(crumbs) { }
