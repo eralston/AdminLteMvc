@@ -1,2 +1,35 @@
 # AdminLteMvc
-A Nuget package for integrating Admin LTE 2.0.4 into an ASP.Net MVC 5 web app
+A NuGet package for integrating Admin LTE 2.0.4 into ASP.Net MVC 5 web apps.
+
+This project has applied the CSS, JavaScript, and default images for the AdminLTE dashboard to the standard Content and Scripts folders. This is useful for traditional multi-page MVC pages or single-page apps that use the standard asset structure for ASP.Net MVC. It also supplies example CSHTML files for the AdminLTE dashboard homepage, including a Layout CSHTML for the CSS and script includes, plus general page structure with partials for the top and left menus.
+
+If you're making a single-page ASP.Net MVC web applications using Angular and want a grunt+bower-style - one component per folder - structure to your project, check out the AdminLte NuGet package: https://www.nuget.org/packages/AdminLTE/
+
+Installation
+------------------
+Install the package via NuGet (https://www.nuget.org/packages/AdminLteMvc/) using the following command:
+
+```
+Install-Package AdminLteMvc
+```
+
+After installation, you should be able to build your MVC application and navigate to the route "/AdminLte" to see the AdminLTE 2.0 dashboard homepage. If you see a gap at the top of the page, it's a side-effect of the detault site.css containing a rule that applies padding to the body element. Go in and delete it: 
+
+```
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+```
+
+Contents
+---------------------
+After installation, you will have a new DLL reference in your project to "AdminLte.dll" - which provides supporting classes for interacting with AdminLte elements and classes in your CSHTML files. Also, new content will be evident in solution explorer as follows:
+
+- A new directory full of CSS and images in "Content/AdminLte"
+- A new directory full of script files in "Scripts/AdminLte"
+- A new directory of CSHTML files in "View/AdminLte"
+- A few new CSHTML files in "View/Shared"
+- A new example controller in "Controller" named "AdminLteController"
+
+The controller contains example pages that utilize the AdminLte components in the package, proviing an example implementations.
