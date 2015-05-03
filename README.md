@@ -5,6 +5,10 @@ This project has applied the CSS, JavaScript, and default images for the AdminLT
 
 If you're making a single-page ASP.Net MVC web applications using Angular and want a grunt+bower-style - one component per folder - structure to your project, check out the AdminLte NuGet package: https://www.nuget.org/packages/AdminLTE/
 
+What is AdminLTE?
+---------------------
+AdminLTE is a free premium admin control panel and dashboard template build on Bootstrap 3.x, originally created by Almsaeed Studio (https://almsaeedstudio.com/). Like Bootstrap itself, it is a useful collection of CSS with supporting HTML snippets that make your web app's UI more visually appealing.
+
 Installation
 ------------------
 Install the package via NuGet (https://www.nuget.org/packages/AdminLteMvc/) using the following command:
@@ -33,3 +37,7 @@ After installation, you will have a new DLL reference in your project to "AdminL
 - A new example controller in "Controller" named "AdminLteController"
 
 The controller contains example pages that utilize the AdminLte components in the package, proviing an example implementations.
+
+License
+---------------------
+AdminLteMVC, like AdminLTE itself, is open source under the MIT License (http://opensource.org/licenses/MIT).
