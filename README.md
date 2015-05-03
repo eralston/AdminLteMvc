@@ -7,7 +7,7 @@ If you're making a single-page ASP.Net MVC web applications using Angular and wa
 
 What is AdminLTE?
 ---------------------
-AdminLTE is a free premium admin control panel and dashboard template build on Bootstrap 3.x, originally created by Almsaeed Studio (https://almsaeedstudio.com/). Like Bootstrap itself, it is a useful collection of CSS with supporting HTML snippets that make your web app's UI more visually appealing.
+AdminLTE is a free premium admin control panel and dashboard template build on Bootstrap 3.x, originally created by Almsaeed Studio (https://almsaeedstudio.com/). Like Bootstrap itself, it is a useful collection of CSS with supporting HTML snippets that make your web app's UI more visually appealing. You can see a full demo of AdminLTE on their website here: https://almsaeedstudio.com/preview
 
 Installation
 ------------------
@@ -36,7 +36,7 @@ After installation, you will have a new DLL reference in your project to "AdminL
 - A few new CSHTML files in "View/Shared"
 - A new example controller in "Controller" named "AdminLteController"
 
-The controller contains example pages that utilize the AdminLte components in the package, proviing an example implementations.
+The controller contains example pages that utilize the AdminLte components in the package, providing an example implementation to start your project. There are many "TODO" comments in the project to help prompt you on how to proceed, such as the suggestion that you might want to modify ViewStart.cshtml to use the _AdminLteLauout.cshtml view instead of your current setting. Once you're off and running, you likely want to delete the AdminLteController class and its supporting views.
 
 License
 ---------------------
