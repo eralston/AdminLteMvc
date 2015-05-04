@@ -20,20 +20,70 @@ namespace AdminLte
         /// </summary>
         public enum Color
         {
+            /// <summary>
+            /// bg-light-blue
+            /// </summary>
             [Display(Name = "Light Blue")]
             LightBlue,
+
+            /// <summary>
+            /// bg-aqua
+            /// </summary>
             Aqua,
+
+            /// <summary>
+            /// bg-blue
+            /// </summary>
             Blue,
+
+            /// <summary>
+            /// bg-green
+            /// </summary>
             Green,
+
+            /// <summary>
+            /// bg-yellow
+            /// </summary>
             Yellow,
+
+            /// <summary>
+            /// bg-red
+            /// </summary>
             Red,
+
+            /// <summary>
+            /// bg-gray
+            /// </summary>
             Gray,
 
+            /// <summary>
+            /// bg-navy
+            /// </summary>
             Navy,
+
+            /// <summary>
+            /// bg-teal
+            /// </summary>
             Teal,
+
+            /// <summary>
+            /// bg-purple
+            /// </summary>
             Purple,
+
+            /// <summary>
+            /// bg-orange
+            /// </summary>
             Orange,
+
+            /// <summary>
+            /// bg-maroon
+            /// </summary>
             Maroon,
+
+            /// <summary>
+            /// bg-black
+            /// </summary>
             Black
         }
 
