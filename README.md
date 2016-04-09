@@ -1,5 +1,7 @@
 # AdminLteMvc
-A NuGet package for integrating Admin LTE 2.0.4 into ASP.Net MVC 5 web apps.
+A NuGet package for integrating Admin LTE 2.0.4 into ASP.Net MVC 4-style web apps.
+
+DEPRECATION WARNING: If you are using the new ASP.Net 5 (Core) project structure, you should [search Bower for AdminLte]{http://bower.io/search/?q=adminlte} and use that instead. This is only appropriate for projects using the old NuGet-managed client-side dependencies style.
 
 This project has applied the CSS, JavaScript, and default images for the AdminLTE dashboard to the standard Content and Scripts folders. This is useful for traditional multi-page MVC pages or single-page apps that use the standard asset structure for ASP.Net MVC. It also supplies example CSHTML files for the AdminLTE dashboard homepage, including a Layout CSHTML for the CSS and script includes, plus general page structure with partials for the top and left menus.
 
